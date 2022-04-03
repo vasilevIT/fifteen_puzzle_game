@@ -2,8 +2,13 @@ import QtQuick 2.9
 import QtQuick.Window 2.2
 
 Window {
-    width: 640
+    id: root
+    width: 480
     height: 480
     visible: true
     title: qsTr("Hello World")
+
+    GameBoard {
+        anchors.fill: parent
+    }
 }
